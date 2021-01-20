@@ -29,7 +29,7 @@ while(True):
         img.draw_cross(tag.cx(), tag.cy(), color = (0, 255, 0))
         img.draw_string(100, 10, "find tag: "+str(num), color=(255,0,0))
         img.draw_string(5, 30+i*15, str(tag.id()), color=(0,0,255))
-        z_dis = '%.2f' % (-17.173* tag.z_translation() + 3.6789)
+        z_dis = '%.2f' % (-17.325* tag.z_translation() + 1.562)
         img.draw_string(20, 30+i*15,str(z_dis)+", "+str(degress), color=(0,0,255))
         print(tag.id(),z_dis, degress)
     lcd.display(img)
